@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Mark Webber",
+        "action": "reacted to your recent post",
+        "notif": "My first tournament today!",
+        "createdAt": "1m",
+        "content":null,
+        "avatar": "/images/avatar-mark-webber.webp",
+        "new":true
+    },
+    {
+        "id": 2,
+        "name":"Angela Gray",
+        "action": "followed you",
+        "notif":null,
+        "createdAt": "5m",
+        "content":null,
+        "avatar": "/images/avatar-angela-gray.webp",
+        "new":true
+    },
+    {
+        "id": 3,
+        "name":"Jacob Thompson",
+        "action": "has joined your group",
+        "notif":"Chess Club",
+        "createdAt": "1 day",
+        "content":null,
+        "avatar": "/images/avatar-jacob-thompson.webp",
+        "new":true
+    },
+    {
+        "id": 4,
+        "name":"Rizky Hasanuddin",
+        "action": "sent you a private message",
+        "notif":null,
+        "createdAt": "5 days",
+        "content": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+        "avatar": "/images/avatar-rizky-hasanuddin.webp",
+        "new":false
+    },
+    {
+        "id": 5,
+        "name":"Kimberly Smith",
+        "action": "commented on your picture",
+        "notif":null,
+        "createdAt": "1 week",
+        "content":"/images/image-chess.webp",
+        "avatar": "/images/avatar-kimberly-smith.webp",
+        "new":false
+    },
+    {
+        "id": 6,
+        "name":"Nathan Peterson",
+        "action": "reacted to your recent post",
+        "notif":"5 end-game strategies to increase your win rate",
+        "createdAt": "2 weeks",
+        "content":null,
+        "avatar": "/images/avatar-nathan-peterson.webp",
+        "new":false
+    },
+    {
+        "id": 7,
+        "name":"Anna Kim",
+        "action": "left the group",
+        "notif":"Chess Club",
+        "createdAt": "2 weeks",
+        "content":null,
+        "avatar": "/images/avatar-anna-kim.webp",
+        "new":false
+    }
+]

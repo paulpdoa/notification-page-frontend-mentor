@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+
+  /* Primary */
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-one: hsl(211, 68%, 94%);
+  --light-grayish-blue-two: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219,12%,42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  background:var(--very-light-grayish-blue);
+  user-select:none;
+  margin:2em;
+}
+.container {
+  height: auto;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.notification {
+  height: auto;
+  width: 50%;
+  background:var(--white);
+  padding: 2rem;
+  border-radius: 1em;
+  box-shadow: 3px 2px 10px 5px var(--grayish-blue);
+}
+.notification__row {
+  display:flex;
+  flex-direction: column;
+  gap: 0.8em;
+  margin-top: 1em;
+}
+.head {
+  display:flex; 
+  justify-content:space-between;
+  align-items:center;
+}
+.head__info {
+  display:flex;
+  align-items:center;
+  gap:1em;  
+}
+.head__number {
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 500;
+  padding: 0.2em;
+  width: 2rem;
+  border-radius: 0.2em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.head__title {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+.head__button {
+  background:none;
+  border:none;
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 1em;
+  cursor:pointer;
+}
+.head__button:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out; 
+  font-weight: 500;
+}
+.card {
+  display:flex;
+  align-items:flex-start;
+  position:relative;
+  gap:1em;
+  padding: 0.7em;
+  background:var(--white);
+  border-radius: 0.5em;
+  cursor:pointer;
+}
+.card__container {
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items:flex-start;
+  gap: 1em;
+}
+.card:hover {
+  background: var(--very-light-grayish-blue);
+  transition: 0.2s ease-in-out; 
+}
+.card--new {
+  background: var(--light-grayish-blue-one);
+}
+.card--old {
+  background:var(--white);
+}
+.card__avatar {
+  width: 2.5em;
+}
+.card__notif {
+  font-weight: 500;
+  color:var(--dark-grayish-blue);
+}
+.card__content {
+  display:flex;
+  align-items:flex-start;
+  gap:1em;
+}
+.card__names--container {
+  display:flex;
+  flex-direction: column;
+}
+.card__name {
+  color:var(--very-dark-blue);
+  font-weight: 800;
+}
+.card__name:hover {
+  color: var(--blue);
+  transition: 0.2s ease-in-out;
+}
+.card__imp {
+  font-weight: 800;
+  color:var(--dark-grayish-blue);
+}
+.card__chess--club {
+  font-weight: 800;
+  color:var(--blue);
+}
+.card__imp:hover {
+  color: var(--blue);
+  transition: 0.2s ease-in-out;
+}
+.card__created {
+  color: var(--grayish-blue);
+  font-weight: 500;
+  font-size: 1em;
+}
+.card__new {
+  background: var(--red);
+  padding: 0.3em;
+  border-radius: 100px;
+  height: 2px;
+  width: 2px;
+  display:inline-block;
+  margin-left: 0.2em;
+}
+.card__notif--content {
+  padding:1.5em;
+  border: 1px solid var(--light-grayish-blue-two);
+  border-radius: 0.5em;
+  margin-top: 1em;
+  font-weight: 500;
+  color:var(--dark-grayish-blue);
+}
+.card__notif--content:hover {
+  background: var(--light-grayish-blue-one);
+  transition: 0.2s ease-in-out;
+}
+.card__notif--image {
+  width: 3em;
+}
+
+@media only screen and (max-width: 1111px) {
+  body {
+    margin: 0;
+  }
+  .notification {
+    width: 100%;
+    border-radius:0;
+  }
+}
